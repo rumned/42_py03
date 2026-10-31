@@ -8,16 +8,25 @@ def gen_player_achievements() -> set[str]:
 
 
 title_list = [
-    'Mastermind',
-    'Philanthropist',
-    'Hackerman',
-    'The Answer',
-    'Dragonduck',
-    'Rigorous Basterd',
-    'Enlightened',
-    'Pentester',
-    'Perfectionist',
-    'Pioneer'
+    '01_Mastermind',
+    '02_Philanthropist',
+    '03_Hackerman',
+    '04_The Answer',
+    '05_Dragonduck',
+    '06_Rigorous Basterd',
+    '07_Enlightened',
+    '08_Pentester',
+    '09_Perfectionist',
+    '10_Pioneer',
+    '11_Awake',
+    '12_Piscine Reloaded',
+    '13_Voxotron',
+    '14_Trancender',
+    '15_Bill Gates',
+    '16_Bonus Hunter',
+    '17_Beta Explorer',
+    '18_Valiant',
+    '19_Golden',
 ]
 
 player_list = [
@@ -43,6 +52,8 @@ if __name__ == '__main__':
         print(f"Player {player_list[i]}: {player_titles_list[i]}\n")
     print(f"\nAll distinct achievements: {gained_achv}\n")
     print(f"Common achievements: {shared_achv}\n")
+    # print(f"\nAll gained achievements: {sorted(gained_achv)}\n")
+    # print(f"Common achievements: {sorted(shared_achv)}\n")
 
     for i in range(len(player_list)):
         others: set[str] = set()
