@@ -42,7 +42,11 @@ def calculate_distance(
 
 
 if __name__ == '__main__':
+    print('== Game Coordinate System ==\n')
+    print('Get a first set of coordinates')
     pos_1 = get_player_pos()
     calculate_distance(pos_1)
+    print()
+    print('Get a first set of coordinates')
     pos_2 = get_player_pos()
     calculate_distance(pos_1, pos_2)
