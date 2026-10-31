@@ -2,7 +2,7 @@
 import sys
 
 if __name__ == '__main__':
-    score_list:list[str] = []
+    score_list: list[int] = []
     i = 0
     j = 1
     args_len = len(sys.argv)
@@ -15,9 +15,9 @@ if __name__ == '__main__':
         j += 1
         args_len -= 1
     if len(score_list) == 0:
-        print("No scores provided.", end = " ")
+        print("No scores provided.", end=" ")
         print("Usage: python3 ft_score_analytics.py <score1> ,<score2> ...")
-    else: 
+    else:
         print(f"Scores processed: {score_list}")
         print(f"Total players: {len(score_list)}")
         print(f"Total score: {sum(score_list)}")
