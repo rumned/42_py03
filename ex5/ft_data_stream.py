@@ -54,5 +54,5 @@ if __name__ == '__main__':
     print(f"Built a list of 10 events: {pl_ev_tuple_list}")
     consume = consume_event(pl_ev_tuple_list)
     for k in consume:
-        print(f"Got event of list: {k}")
+        print(f"Got event from list: {k}")
         print(f"Remains in list: {pl_ev_tuple_list}")
