@@ -2,15 +2,15 @@
 import sys
 
 
-def parse_cli() -> None:
+def parse_cli() -> dict[str, int]:
     has_exception = False
     inv = {}
     input_order = 0
     for arg in sys.argv[1:]:
         input_order += 1
         try:
-            name, qty = arg.split(':')
-            qty = int(qty)
+            name, qty_str = arg.split(':')
+            qty: int = int(qty_str)
         except ValueError:
             print(f"Error: invalid input at item {input_order}")
             has_exception = True
@@ -23,6 +23,7 @@ def parse_cli() -> None:
         print("Each parameter must follow this format:",
               "<item_name>:<quantity>")
     print(inv)
+    return inv
 
 
 if __name__ == "__main__":
