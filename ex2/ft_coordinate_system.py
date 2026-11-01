@@ -9,7 +9,7 @@ def get_player_pos() -> tuple[float, float, float]:
             "Enter new coordinates as floats in format 'x,y,z': ")
         passed_args = player_pos.split(',')
         if len(passed_args) != 3:
-            print("3 coordinates in float format is needed")
+            print("3 coordinates in 'float,float,float' is needed")
             continue
         try:
             x, y, z = tuple(float(i) for i in passed_args)
