@@ -11,6 +11,8 @@ def parse_cli() -> dict[str, int]:
         try:
             name, qty_str = arg.split(':')
             qty: int = int(qty_str)
+            if qty < 1:
+                raise ValueError("Item cannot be zero")
         except Exception as e:
             print(f"Error: invalid input at item {input_order} -- "
                   f"{e}")
