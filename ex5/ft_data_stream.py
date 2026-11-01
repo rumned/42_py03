@@ -45,7 +45,7 @@ if __name__ == '__main__':
     i = 1
     while i <= 1000:
         print(f"Event no: {i}",
-              f"{next(gen)[0]} is doing {next(gen)[1]}ing")
+              f"{next(gen)[0]} is {next(gen)[1]}ing")
         i += 1
 
     pl_ev_tuple_list = []
