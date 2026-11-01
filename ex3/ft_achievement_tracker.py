@@ -50,8 +50,10 @@ if __name__ == '__main__':
     print()
     for i in range(len(player_list)):
         print(f"Player {player_list[i]}: {player_titles_list[i]}\n")
+        # print(f"Player {player_list[i]}: {sorted(player_titles_list[i])}\n")
     print(f"\nAll distinct achievements: {gained_achv}\n")
     print(f"Common achievements: {shared_achv}\n")
+    # print(f"Common achievements: sorted({shared_achv})\n")
     # print(f"\nAll gained achievements: {sorted(gained_achv)}\n")
     # print(f"Common achievements: {sorted(shared_achv)}\n")
 
